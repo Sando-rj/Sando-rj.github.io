@@ -1,0 +1,195 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+ul {
+    margin-left: 2%;
+}
+
+.bg {
+    background-image: url("images/Profile.jpg");
+    overflow: hidden;
+
+    height:100%;
+
+    background-position: 75% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    flex: 1;
+}
+
+.brand-title {
+    color: #363636;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.125;
+}
+
+.navbar {
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.summary {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    flex: 2;
+}
+
+.networks {
+    display: flex;
+    margin: 2% 0 2% 0;
+    width: 100%;
+    align-items: center;
+    flex: 1;
+}
+
+.networks a {
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.landing {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-separator {
+    flex: 1;
+}
+
+.end-separator {
+    flex: 1;
+}
+
+@media all and (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .landing {
+        flex-direction: column-reverse;
+        flex: 1;
+    }
+
+
+    .bg {
+        flex: 1 1 50vmin;
+        width: 50vmin;
+        min-height: 50vmin;
+        max-height: 50vmin;
+        background-image: url("images/ProfileMobile.jpg");
+        background-position: 50% 50%;        
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    #Publications {
+        padding: 1rem 1.5rem;
+    }
+
+
+    .section-separator {
+        width: 50%;
+        margin: 0;
+        background-color: white;
+    }
+
+    .start-separator {
+        flex: 1 1 3.5rem;
+    }
+
+    .end-separator {        
+        flex: 1 1 3.5rem;
+        max-height: 15vh;
+    }
+
+    .summary {
+    }
+
+    .summary p {
+        flex: 2 1 0; 
+        margin: 3rem 0 1rem 0;
+    }
+
+    .credits span {
+        color: rgba(0, 0, 0, 0);
+    }
+}
+
+.pub-title {
+    max-height: 50%;
+}
+
+.link-ico {
+    display: flex;
+    justify-content: center;
+}
+
+.link-ico img {
+    min-width: 3em;
+}
+
+.ante-credits {
+    flex: 20;
+}
+
+.credits {
+    align-self: flex-end;
+    flex:1;
+    color: white;
+    padding: 0;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.section-separator {
+    width: 50%;
+    margin-left: 25%;
+    background-color: white;
+}
+
+.underline {
+    background-color: lightgrey;
+    width: 40%;
+    margin: 0;
+}
+
+.year-holder {
+    margin: 0 0 1em 3rem;
+}
+
+.course-info {
+    margin: 1em 1.5rem;
+}
+
+.level-is-shrinkable {
+    align-items: stretch;
+}
+
+ul + .year-holder {
+    padding-top: 1.5rem;
+}
+
+.level-is-shrinkable .level-left,
+.level-is-shrinkable .level-left .level-item,
+.level-is-shrinkable .level-right,
+.level-is-shrinkable .level-right .level-item {
+    flex-shrink: 1;
+    align-items: center;
+}
+
+.fa-youtube {
+    color: red;
+}
